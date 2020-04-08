@@ -1,0 +1,42 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #d8b335;
+}
+
+.form-container {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.form-container form {
+    color: #e25d5d;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    background: rgb(218, 218, 218);
+    resize: none;
+}
+
+.form-container button {
+    color: white;
+    background: #d8b335;
+    border: 3px solid #d8b335;
+}
+
+.form-container button:hover {
+    color: #d8b335;
+    background: white;
+    border: 3px solid #d8b335;
+}

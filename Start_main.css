@@ -1,0 +1,146 @@
+
+
+/*****************************************************
+                        SLIDESHOW
+*****************************************************/
+
+.slideshow {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.slideshow-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: #ffffff33;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url("img/img1.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.img > h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 2.5%;
+    color: #fff;
+}
+
+.img > p {
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 5%;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.quote-mark {
+    color: #d8b335;
+}
+
+.em-dash {
+    color: #d8b335;
+}
+
+
+
+/*****************************************************
+                        ABOUT
+*****************************************************/
+
+.about > h3 {
+    text-align: center;
+    color: #d8b335;
+    font-size: 2em;
+}
+
+.about > p {
+    color: #000;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 2.5%;
+}
+
+
+/*****************************************************
+                        MEDIA QUERIES
+*****************************************************/
+
+@media screen and (min-width: 40rem) {
+    .slideshow {
+        height: 75vh;
+    }
+
+    .about > h3 {
+        font-size: 3em;
+    }
+
+    .about > p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .img > h3 {
+        font-size: 2.25em;
+    }
+
+    .about > h3 {
+        font-size: 3em;
+    }
+
+    .about > p {
+        font-size: 1.5em;
+    }
+
+    .img > p {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | .Redu</title>
+    <link rel="shortcut icon" href="redu-logo-short.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|PT+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- main page only -->
+    <div class="load-screen">
+        <div class="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+    <!-- mobile-first -->
+    <header class="main-header">
+        <div class="main-header__buttonANDlogo">
+            <button class="nav-burger">
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+            </button>
+            <a href="#" class="main-header__logo">
+                <div class="logo-container">
+                    <img src="redu-logo.png" alt="Flores' logo">
+                </div>
+            </a>
+            <button class="nav-burger nav-burger--right">
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+            </button>
+        </div>
+        <nav class="main-header__nav main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item selected">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="about/index.html">About</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="main-nav__item selected">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="about/index.html">About</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="contact/index.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+<!-- main content starts here -->
+    <main>
+        <section class="slideshow">
+            <div class="slideshow-wrapper">
+                <div class="images fade">
+                    <figure class="img one">
+                        <h3><span class="quote-mark">"</span>Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family.<span class="quote-mark">"</span></h3>
+                        <p><span class="em-dash">&mdash;</span> Kofi Annan</p>
+                    </figure>
+                </div>
+        
+                <div class="images fade">
+                    <figure class="img two">
+                    <h3 class=><span class="quote-mark">"</span>By 2020 there will be 1.4 million computer science related jobs available and only 400,000 computer science graduates with the skills to apply for those jobs.<span class="quote-mark">"</span></h3>
+                    <p><span class="em-dash">&mdash;</span> Bureau of Labor Statistics</p>
+                    </figure>
+                </div>
+        
+                <div class="images fade">
+                    <figure class="img three">
+                        <h3><span class="quote-mark">"</span>Our rapidly moving, information-based society badly needs people who know how to find facts rather than memorize them, and who know how to cope with change in creative ways. You don’t learn those things in school.<span class="quote-mark">"</span></h3>
+                        <p><span class="em-dash">&mdash;</span> Wendy Priesnitz</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about">
+            <h3>What We Do</h3>
+            <p>We are a non-profit that strives to spread a wave of education reform. We believe in equitable education for all students, regardless of their economic and social status.</p><br>
+            <p>There are talented students all around that do not have the resources they need to excel, which only limits the growth of our society. By helping these students reach their maximum potential, we can increase economic mobility and societal growth.</p>
+            <p></p>
+        </section>
+        <div class="space"></div>
+    </main>
+
+    <footer class="main-footer probably-the-only-one">
+        <div><p>&copy;2019 A Scorned Supergroup</p></div>
+    </footer>
+</body>
+<script src="shared.js"></script>
+<script src="main.js"></script>
+</html>

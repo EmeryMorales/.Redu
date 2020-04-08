@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact | .Redu</title>
+    <link rel="shortcut icon" href="../redu-logo-short.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|PT+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- main page only -->
+    <div class="load-screen">
+        <div class="boxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+    <!-- mobile-first -->
+    <header class="main-header">
+        <div class="main-header__buttonANDlogo">
+            <button class="nav-burger">
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+            </button>
+            <a href="#" class="main-header__logo">
+                <div class="logo-container">
+                    <img src="../redu-logo.png" alt="Flores' logo">
+                </div>
+            </a>
+            <button class="nav-burger nav-burger--right">
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+                    <span class="nav-burger__bar"></span>
+            </button>
+        </div>
+        <nav class="main-header__nav main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../about/index.html">About</a>
+                </li>
+                <li class="main-nav__item selected">
+                    <a href="index.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="main-nav__item">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="../about/index.html">About</a>
+            </li>
+            <li class="main-nav__item selected">
+                <a href="index.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main content starts here -->
+    <main>
+        <h2>Contact Us</h2>
+        <div class="form-container">
+            <form action="https://formspree.io/enoc.flores.ef@gmail.com" method="post">
+                First name: <br>
+                <input type="text" name="firstname" placeholder="John" required autofocus>
+                <br>
+                Last Name: <br>
+                <input type="text" name="lastname" placeholder="Doe" required>
+                <br><br>
+                Email: <br>
+                <input type="email" name="email" placeholder="example@mail.com" required>
+                <br><br>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="empty">- - -</option>
+                    <option value="Bug">Apply</option>
+                    <option value="job request">Request Workshop</option>
+                    <option value="feedback">Volunteer</option>
+                    <option value="other">Other</option>
+                </select required>
+                <br><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here!" required></textarea>
+                <br><br>
+                <!-- <input type="submit" value="Submit"> -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="space"></div>
+    </main>
+    <footer class="main-footer probably-the-only-one">
+        <div><p>&copy;2019 A Scorned Supergroup</p></div>
+    </footer>
+</body>
+<script src="../shared.js"></script>
+</html>
